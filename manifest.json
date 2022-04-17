@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Link Saver & Yt Ad-Auto-Skipper",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "saveimg.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts":[
+        {
+           "js":["script.js"],
+           "run_at":"document_idle",
+           "matches":["<all_urls>"] 
+        }
+    ]
+}
